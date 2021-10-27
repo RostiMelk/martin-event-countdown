@@ -7,8 +7,6 @@ const Countdown = ({ timeEnd, handleDone }) => {
 	useEffect(() => {
 		const count = countdownHandler(timeEnd);
 
-		console.log(count.value);
-
 		if (count.value > 1000) {
 			handleDone(true);
 			return;

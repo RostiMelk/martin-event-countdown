@@ -1,21 +1,26 @@
 import React, { useState } from 'react';
 import Logo from './components/Logo';
-import Message from './components/Message';
+import Video from './components/Video';
 import Countdown from './components/Countdown';
 import './App.css';
 
 function App() {
-	const [showMessage, setShowMessage] = useState(false);
+	const [showVideo, setShowVideo] = useState(false);
 	const TIME_TO_LIVE = new Date('2021-10-30T19:00:00.000+02:00');
+	const appClass = showVideo ? 'video' : 'countdown';
 
 	const handleDone = (status) => {
-		if (status === true) setShowMessage(true);
+		if (status === true) setShowVideo(true);
 	};
 
 	return (
-		<div className="App">
+		<div className={`app ${appClass}`}>
 			<Logo />
-			{showMessage ? <Message /> : <Countdown timeEnd={TIME_TO_LIVE} handleDone={handleDone} />}
+			{showVideo ? (
+				<Video src="https://www.youtube.com/embed/5eDz4ya-QEA?autoplay=1" />
+			) : (
+				<Countdown timeEnd={TIME_TO_LIVE} handleDone={handleDone} />
+			)}
 		</div>
 	);
 }
