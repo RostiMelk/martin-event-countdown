@@ -6,11 +6,10 @@ import './App.css';
 
 function App() {
 	const [showMessage, setShowMessage] = useState(false);
-	// const TIME_TO_LIVE = new Date('2021-10-30T19:00:00.000+02:00');
-	const TIME_TO_LIVE = new Date('2021-10-27T18:52:00.000+02:00');
+	const TIME_TO_LIVE = new Date('2021-10-30T19:00:00.000+02:00');
 
 	const handleDone = (status) => {
-		if (status) setShowMessage(true);
+		if (status === true) setShowMessage(true);
 	};
 
 	return (
