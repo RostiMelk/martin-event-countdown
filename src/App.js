@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Logo from './components/Logo';
+import Message from './components/Message';
+import Countdown from './components/Countdown';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [showMessage, setShowMessage] = useState(false);
+	// const TIME_TO_LIVE = new Date('2021-10-30T19:00:00.000+02:00');
+	const TIME_TO_LIVE = new Date('2021-10-27T18:52:00.000+02:00');
+
+	const handleDone = (status) => {
+		if (status) setShowMessage(true);
+	};
+
+	return (
+		<div className="App">
+			<Logo />
+			{showMessage ? <Message /> : <Countdown timeEnd={TIME_TO_LIVE} handleDone={handleDone} />}
+		</div>
+	);
 }
 
 export default App;
