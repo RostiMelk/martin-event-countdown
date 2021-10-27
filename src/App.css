@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
+.app {
+	max-width: 1200px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 16px;
+	padding-left: 16px;
+	text-align: center;
+}
+
 @media (min-width: 600px) {
 	.app {
 		display: flex;
@@ -9,16 +19,6 @@
 		min-height: 100vh;
 		margin-top: 0;
 	}
-}
-
-.app {
-	max-width: 1200px;
-	margin-top: 40px;
-	margin-right: auto;
-	margin-left: auto;
-	padding-right: 16px;
-	padding-left: 16px;
-	text-align: center;
 }
 
 .logo img {
