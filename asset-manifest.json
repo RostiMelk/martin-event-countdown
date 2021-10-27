@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/martin-event-countdown/static/css/main.0f54144d.chunk.css",
-    "main.js": "/martin-event-countdown/static/js/main.45e7a659.chunk.js",
-    "main.js.map": "/martin-event-countdown/static/js/main.45e7a659.chunk.js.map",
+    "main.js": "/martin-event-countdown/static/js/main.4f42ff06.chunk.js",
+    "main.js.map": "/martin-event-countdown/static/js/main.4f42ff06.chunk.js.map",
     "runtime-main.js": "/martin-event-countdown/static/js/runtime-main.0c2ad42f.js",
     "runtime-main.js.map": "/martin-event-countdown/static/js/runtime-main.0c2ad42f.js.map",
     "static/js/2.2bc676c5.chunk.js": "/martin-event-countdown/static/js/2.2bc676c5.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.0c2ad42f.js",
     "static/js/2.2bc676c5.chunk.js",
     "static/css/main.0f54144d.chunk.css",
-    "static/js/main.45e7a659.chunk.js"
+    "static/js/main.4f42ff06.chunk.js"
   ]
 }
